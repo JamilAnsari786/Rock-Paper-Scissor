@@ -14,26 +14,35 @@ function playGame(playerMove) {
   if (playerMove === "scissors") {
     if (computerMove === "rock") {
       result = "You lose.";
+      document.body.style.backgroundColor='red';
     } else if (computerMove === "paper") {
       result = "You win.";
+      document.body.style.backgroundColor='green';
     } else if (computerMove === "scissors") {
       result = "Tie.";
+      document.body.style.backgroundColor='#AEAEAE';
     }
   } else if (playerMove === "paper") {
     if (computerMove === "rock") {
       result = "You win.";
+      document.body.style.backgroundColor='green';
     } else if (computerMove === "paper") {
       result = "Tie.";
+      document.body.style.backgroundColor='#AEAEAE';
     } else if (computerMove === "scissors") {
       result = "You lose.";
+      document.body.style.backgroundColor='red';
     }
   } else if (playerMove === "rock") {
     if (computerMove === "rock") {
       result = "Tie.";
+      document.body.style.backgroundColor='#AEAEAE';
     } else if (computerMove === "paper") {
       result = "You lose.";
+      document.body.style.backgroundColor='red';
     } else if (computerMove === "scissors") {
       result = "You win.";
+      document.body.style.backgroundColor='green';
     }
   }
 
