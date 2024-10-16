@@ -90,6 +90,6 @@ function pickComputerMove() {
 
 let resetButton = document.querySelector('.reset-score-button');
 resetButton.addEventListener('click', ()=> {
-  document.body.style.backgroundColor = 'black';
+  document.body.style.backgroundColor = 'rgb(25, 25, 25)';
   
 })
